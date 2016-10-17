@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_filter">
+    <sys_filter action="INSERT_OR_UPDATE">
+        <filter table="x_spog_offline_app_offline_approval_table">sys_id=6c46f6a8db0c6a002ab550d9bf9619e6^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="6c46f6a8db0c6a002ab550d9bf9619e6"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <group/>
+        <last_used>2016-06-15 15:40:46</last_used>
+        <mobile>true</mobile>
+        <roles/>
+        <sys_class_name>sys_filter</sys_class_name>
+        <sys_created_by>annalie.jones</sys_created_by>
+        <sys_created_on>2016-06-13 15:21:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91aedb64db4c6a002ab550d9bf96194a</sys_id>
+        <sys_mod_count>132</sys_mod_count>
+        <sys_name>mobile</sys_name>
+        <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+        <sys_update_name>sys_filter_91aedb64db4c6a002ab550d9bf96194a</sys_update_name>
+        <sys_updated_by>annalie.jones</sys_updated_by>
+        <sys_updated_on>2016-06-15 15:40:46</sys_updated_on>
+        <table>x_spog_offline_app_offline_approval_table</table>
+        <title>mobile</title>
+        <user display_value="Annalie Jones">b273c69637b8820050579c9953990e47</user>
+    </sys_filter>
+</record_update>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_type" table="x_spog_offline_app_offline_approval_table" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IB Funding</label>
+            <language>en</language>
+            <name>x_spog_offline_app_offline_approval_table</name>
+            <sequence>0</sequence>
+            <sys_created_by>david.edgar</sys_created_by>
+            <sys_created_on>2016-05-26 13:47:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>308c1a7edb2316006d11f1eabf961982</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>david.edgar</sys_updated_by>
+            <sys_updated_on>2016-08-11 14:26:56</sys_updated_on>
+            <value>IB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>IB Funding</label>
+            <language>en</language>
+            <name>x_spog_offline_app_offline_approval_table</name>
+            <sequence>1</sequence>
+            <sys_created_by>david.edgar</sys_created_by>
+            <sys_created_on>2016-06-06 13:26:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a21831adbf7d6002ab550d9bf961932</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>david.edgar</sys_updated_by>
+            <sys_updated_on>2016-06-30 11:22:29</sys_updated_on>
+            <value>funding ib</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PLT Funding</label>
+            <language>en</language>
+            <name>x_spog_offline_app_offline_approval_table</name>
+            <sequence>2</sequence>
+            <sys_created_by>david.edgar</sys_created_by>
+            <sys_created_on>2016-05-26 13:47:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>788c1a7edb2316006d11f1eabf961982</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>david.edgar</sys_updated_by>
+            <sys_updated_on>2016-08-11 14:27:07</sys_updated_on>
+            <value>PLT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>PLT Funding</label>
+            <language>en</language>
+            <name>x_spog_offline_app_offline_approval_table</name>
+            <sequence>3</sequence>
+            <sys_created_by>david.edgar</sys_created_by>
+            <sys_created_on>2016-06-06 13:27:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a0414f1adbf7d6002ab550d9bf96191f</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>david.edgar</sys_updated_by>
+            <sys_updated_on>2016-06-30 11:22:26</sys_updated_on>
+            <value>funding plt</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Seed Funding</label>
+            <language>en</language>
+            <name>x_spog_offline_app_offline_approval_table</name>
+            <sequence>4</sequence>
+            <sys_created_by>david.edgar</sys_created_by>
+            <sys_created_on>2016-05-26 13:47:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>308c1a7edb2316006d11f1eabf961983</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>david.edgar</sys_updated_by>
+            <sys_updated_on>2016-06-30 11:22:39</sys_updated_on>
+            <value>Seed</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_type</element>
+            <name>x_spog_offline_app_offline_approval_table</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>david.edgar</sys_created_by>
+            <sys_created_on>2016-05-26 13:47:15</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>f48c1a7edb2316006d11f1eabf961982</sys_id>
+            <sys_mod_count>26</sys_mod_count>
+            <sys_name>u_type</sys_name>
+            <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+            <sys_update_name>sys_choice_x_spog_offline_app_offline_approval_table_u_type</sys_update_name>
+            <sys_updated_by>david.edgar</sys_updated_by>
+            <sys_updated_on>2016-08-11 14:27:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

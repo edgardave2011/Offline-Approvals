@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_spog_offline_app.David</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>David</name>
+        <script><![CDATA[var David = Class.create();
+David.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+getReqGroup: function(){
+//create new JSON object
+var json = new JSON();
+//create new array for required user details
+var user = [];
+//requester (sys_id of user record)
+var req = this.getParameter('sysparm_req');
+//get user record
+var gr = new GlideRecord("sys_user");
+gr.get(req)
+//add requred user details to user array. Add as required. For reference fields use getDisplayValue
+user.push({
+'department': gr.department.getDisplayValue().toString(),
+'email': gr.email.toString(),
+'phone': gr.phone.toString()
+})
+//encode JSON and send back to client
+return json.encode(user);
+},
+type: 'David'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-05-31 09:50:12</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>62d51b10dbbb56006d11f1eabf9619b7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>David</sys_name>
+        <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+        <sys_update_name>sys_script_include_62d51b10dbbb56006d11f1eabf9619b7</sys_update_name>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-05-31 11:08:46</sys_updated_on>
+    </sys_script_include>
+</record_update>

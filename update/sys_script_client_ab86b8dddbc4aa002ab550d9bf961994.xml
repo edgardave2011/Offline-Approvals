@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>Show State for PPMO when IB/PLT complete</name>
+        <order/>
+        <script><![CDATA[	function onLoad() {
+if (g_user.hasRole('x_spog_offline_app.ppmo') && (u_offline_approval_state = ('plt member approved' || 'plt member rejected' || 'ib meeting approved' || 'plt meeting approved' || 'ib meeting rejected' || 'ib meeting approved with conditions' || 'plt meeting rejected' || 'plt meeting approved with conditions' ||  'ib member rejected' ||  'ib member approved' ||  'rejected' ||  'ppmo rejected'))) {
+   g_form.setReadonly('u_offline_approval_state',false);
+	
+// 	g_form.removeOption("u_offline_approval_state", "7");
+// 	g_form.removeOption("u_offline_approval_state", "8");
+}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-15 11:07:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ab86b8dddbc4aa002ab550d9bf961994</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Show State for PPMO when IB/PLT complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+        <sys_update_name>sys_script_client_ab86b8dddbc4aa002ab550d9bf961994</sys_update_name>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-15 11:17:51</sys_updated_on>
+        <table>x_spog_offline_app_offline_approval_table</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_spog_offline_app_offline_approval_table">u_offline_approval_state=6^u_type=IB^EQ<item endquery="false" field="u_offline_approval_state" goto="false" newquery="false" operator="=" or="false" value="6"/>
+            <item endquery="false" field="u_type" goto="false" newquery="false" operator="=" or="false" value="IB"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>false</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false/>
+        <script_true><![CDATA[function onCondition() {
+// g_form.removeOption('priority', '0');
+// 	g_form.removeOption('priority', '1');
+// 	g_form.removeOption('priority', '1');
+// 	g_form.removeOption('priority', '1');
+// 	g_form.removeOption('priority', '1');
+	//g_form.setReadonly('u_requestor',true);
+g_form.removeOption('approval','plt meeting approved with conditions');
+g_form.removeOption('approval','finance & ppmo rejected');
+g_form.removeOption('approval','finance & ppmo approved');
+g_form.removeOption('approval','ppmo rejected');
+g_form.removeOption('approval','ppmo approved');
+g_form.removeOption('approval','requested');
+g_form.removeOption('approval','not requested');
+g_form.removeOption('approval','rejected');
+g_form.removeOption('approval','FP2 Approved');
+g_form.removeOption('approval','cio approved');
+g_form.removeOption('approval','cio rejected');
+g_form.removeOption('approval','ib member approved');
+//g_form.removeOption('approval','ib meeting approved with conditions');
+g_form.removeOption('approval','plt meeting rejected');
+//g_form.removeOption('approval','ib meeting rejected');
+g_form.removeOption('approval','plt meeting approved');
+//g_form.removeOption('approval','ib meeting approved');
+g_form.removeOption('approval','plt meeting required');
+g_form.removeOption('approval','plt member rejected');
+g_form.removeOption('approval','plt member approved');
+//g_form.removeOption('approval','ib meeting required');
+g_form.removeOption('approval','ib member rejected');
+
+}]]></script_true>
+        <set_values/>
+        <short_description>IB - Hide Approval option and make approval field editable</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-02 14:50:15</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10ddea05dbb796006d11f1eabf96193d</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>IB - Hide Approval option and make approval field editable</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+        <sys_update_name>sys_ui_policy_10ddea05dbb796006d11f1eabf96193d</sys_update_name>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-08-11 14:23:56</sys_updated_on>
+        <table>x_spog_offline_app_offline_approval_table</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

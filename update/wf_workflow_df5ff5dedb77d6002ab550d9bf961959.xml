@@ -1,0 +1,3386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <activity_stages>{"activities":{"5b315642db54e2002ab550d9bf961912":"8b315202db54e2002ab550d9bf96194d","13315642db54e2002ab550d9bf961916":"4b315202db54e2002ab550d9bf96194d","43315642db54e2002ab550d9bf96190b":"4b315202db54e2002ab550d9bf96194d","cb315642db54e2002ab550d9bf961909":"4b315202db54e2002ab550d9bf96194d","47315642db54e2002ab550d9bf96190a":"8b315202db54e2002ab550d9bf96194d","13315642db54e2002ab550d9bf96190f":"4f315202db54e2002ab550d9bf96194d","8b315642db54e2002ab550d9bf96190a":"0f315202db54e2002ab550d9bf96194d","c3315642db54e2002ab550d9bf96190d":"0f315202db54e2002ab550d9bf96194d","5b315642db54e2002ab550d9bf96190e":"8f315202db54e2002ab550d9bf96194d","87315642db54e2002ab550d9bf96190b":"8b315202db54e2002ab550d9bf96194d","97315642db54e2002ab550d9bf961915":"4f315202db54e2002ab550d9bf96194d","cb315642db54e2002ab550d9bf96190b":"4b315202db54e2002ab550d9bf96194d","83315642db54e2002ab550d9bf96190e":"4b315202db54e2002ab550d9bf96194d","43315202db54e2002ab550d9bf96194e":"4f315202db54e2002ab550d9bf96194d","0b315202db54e2002ab550d9bf96194e":"4b315202db54e2002ab550d9bf96194d","53315642db54e2002ab550d9bf961910":"4f315202db54e2002ab550d9bf96194d","db315642db54e2002ab550d9bf961915":"4f315202db54e2002ab550d9bf96194d"},"subflows":[],"stages":{"8f315202db54e2002ab550d9bf96194d":{"name":"Awaiting Physical Meeting","value":"Awaiting Physical Meeting","duration":"","order":100,"stageId":"8f315202db54e2002ab550d9bf96194d"},"0f315202db54e2002ab550d9bf96194d":{"name":"Revision Required","value":"Revision Required","duration":"","order":100,"stageId":"0f315202db54e2002ab550d9bf96194d"},"4b315202db54e2002ab550d9bf96194d":{"name":"PPMO Review","value":"PPMO Review","duration":"","order":100,"stageId":"4b315202db54e2002ab550d9bf96194d"},"8b315202db54e2002ab550d9bf96194d":{"name":"Finance &amp; PPMO Review","value":"Finance &amp; PPMO Review","duration":"","order":100,"stageId":"8b315202db54e2002ab550d9bf96194d"},"4f315202db54e2002ab550d9bf96194d":{"name":"PLT Member Review","value":"PLT Member Review","duration":"","order":100,"stageId":"4f315202db54e2002ab550d9bf96194d"}},"ends":["03315642db54e2002ab550d9bf96190e","9f315642db54e2002ab550d9bf96190e","cf315642db54e2002ab550d9bf96190a"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition table="x_spog_offline_app_offline_approval_table">active=true^approval=requested^u_typeINPLT,funding plt^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="approval" goto="false" newquery="false" operator="=" or="false" value="requested"/>
+            <item endquery="false" field="u_type" goto="false" newquery="false" operator="IN" or="false" value="PLT,funding plt"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>0b315642db54e2002ab550d9bf96190d,43315642db54e2002ab550d9bf96190b,13315642db54e2002ab550d9bf961916,cb315642db54e2002ab550d9bf961909,87315642db54e2002ab550d9bf96190b,5b315642db54e2002ab550d9bf961912,47315642db54e2002ab550d9bf96190a,97315642db54e2002ab550d9bf961915,53315642db54e2002ab550d9bf961910,1b315642db54e2002ab550d9bf961918,07315642db54e2002ab550d9bf96190c,9f315642db54e2002ab550d9bf96190e</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>0b315642db54e2002ab550d9bf96190d,43315642db54e2002ab550d9bf96190b,13315642db54e2002ab550d9bf961916,cb315642db54e2002ab550d9bf961909,87315642db54e2002ab550d9bf96190b,5b315642db54e2002ab550d9bf961912,47315642db54e2002ab550d9bf96190a,97315642db54e2002ab550d9bf961915,53315642db54e2002ab550d9bf961910,5b315642db54e2002ab550d9bf96190e,43315202db54e2002ab550d9bf96194e,13315642db54e2002ab550d9bf96190f,cb315642db54e2002ab550d9bf96190d,07315642db54e2002ab550d9bf96190c,9f315642db54e2002ab550d9bf96190e|0b315642db54e2002ab550d9bf96190d,43315642db54e2002ab550d9bf96190b,13315642db54e2002ab550d9bf961916,cb315642db54e2002ab550d9bf961909,87315642db54e2002ab550d9bf96190b,5b315642db54e2002ab550d9bf961912,47315642db54e2002ab550d9bf96190a,97315642db54e2002ab550d9bf961915,53315642db54e2002ab550d9bf961910,5b315642db54e2002ab550d9bf96190e,43315202db54e2002ab550d9bf96194e,13315642db54e2002ab550d9bf96190f,03315642db54e2002ab550d9bf96190a,07315642db54e2002ab550d9bf96190c,9f315642db54e2002ab550d9bf96190e|0b315642db54e2002ab550d9bf96190d,43315642db54e2002ab550d9bf96190b,13315642db54e2002ab550d9bf961916,cb315642db54e2002ab550d9bf961909,87315642db54e2002ab550d9bf96190b,5b315642db54e2002ab550d9bf961912,47315642db54e2002ab550d9bf96190a,97315642db54e2002ab550d9bf961915,53315642db54e2002ab550d9bf961910,5b315642db54e2002ab550d9bf96190e,43315202db54e2002ab550d9bf96194e,13315642db54e2002ab550d9bf96190f,8b315642db54e2002ab550d9bf96190a,c3315642db54e2002ab550d9bf96190d,03315642db54e2002ab550d9bf96190e|0b315642db54e2002ab550d9bf96190d,43315642db54e2002ab550d9bf96190b,13315642db54e2002ab550d9bf961916,cb315642db54e2002ab550d9bf961909,87315642db54e2002ab550d9bf96190b,5b315642db54e2002ab550d9bf961912,47315642db54e2002ab550d9bf96190a,97315642db54e2002ab550d9bf961915,53315642db54e2002ab550d9bf961910,5b315642db54e2002ab550d9bf96190e,43315202db54e2002ab550d9bf96194e,13315642db54e2002ab550d9bf96190f,db315642db54e2002ab550d9bf961915,cf315642db54e2002ab550d9bf96190a|0b315642db54e2002ab550d9bf96190d,43315642db54e2002ab550d9bf96190b,13315642db54e2002ab550d9bf961916,cb315642db54e2002ab550d9bf961909,87315642db54e2002ab550d9bf96190b,5b315642db54e2002ab550d9bf961912,47315642db54e2002ab550d9bf96190a,97315642db54e2002ab550d9bf961915,53315642db54e2002ab550d9bf961910,1b315642db54e2002ab550d9bf961918,07315642db54e2002ab550d9bf96190c,9f315642db54e2002ab550d9bf96190e|0b315642db54e2002ab550d9bf96190d,43315642db54e2002ab550d9bf96190b,13315642db54e2002ab550d9bf961916,cb315642db54e2002ab550d9bf961909,87315642db54e2002ab550d9bf96190b,5b315642db54e2002ab550d9bf961912,1f315642db54e2002ab550d9bf96190f,c3315642db54e2002ab550d9bf96190d,03315642db54e2002ab550d9bf96190e|0b315642db54e2002ab550d9bf96190d,43315642db54e2002ab550d9bf96190b,13315642db54e2002ab550d9bf961916,53315642db54e2002ab550d9bf961915,c3315642db54e2002ab550d9bf96190d,03315642db54e2002ab550d9bf96190e</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Offline Approval - PLT Workflow</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>workflow_stage</stage_field>
+        <stage_order>user_specified</stage_order>
+        <start display_value="Begin">0b315642db54e2002ab550d9bf96190d</start>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>47315202db54e2002ab550d9bf96194d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-07-01 11:39:38</sys_updated_on>
+        <table>x_spog_offline_app_offline_approval_table</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="Offline Approval - PLT Workflow">df5ff5dedb77d6002ab550d9bf961959</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Offline Approval - PLT Workflow</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-06 08:38:38</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df5ff5dedb77d6002ab550d9bf961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Offline Approval - PLT Workflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+        <sys_update_name>wf_workflow_df5ff5dedb77d6002ab550d9bf961959</sys_update_name>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-06 08:38:38</sys_updated_on>
+        <table/>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Awaiting Physical Meeting</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>8f315202db54e2002ab550d9bf96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>Awaiting Physical Meeting</value>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>CIO Review</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cf315202db54e2002ab550d9bf96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>CIO Review</value>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Finance &amp; PPMO Review</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>8b315202db54e2002ab550d9bf96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>Finance &amp; PPMO Review</value>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>IB Member Review</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cb315202db54e2002ab550d9bf96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>IB Member Review</value>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>PLT Member Review</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4f315202db54e2002ab550d9bf96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>PLT Member Review</value>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>PPMO Review</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4b315202db54e2002ab550d9bf96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>PPMO Review</value>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Revision Required</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>0f315202db54e2002ab550d9bf96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>Revision Required</value>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>45</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name/>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PPMO Review">4b315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cb315642db54e2002ab550d9bf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>199</x>
+        <y>915</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cb315642db54e2002ab550d9bf96190b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>0f315642db54e2002ab550d9bf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>u_typeNOT INPLT,funding plt^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cb315642db54e2002ab550d9bf96190b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>8f315642db54e2002ab550d9bf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cb315642db54e2002ab550d9bf96190b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>03315642db54e2002ab550d9bf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="">cb315642db54e2002ab550d9bf96190b</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>83315642db54e2002ab550d9bf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Switch">f84eda480a0a3c1800a6fa8c7badf346</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>48</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name> Member Review Physical Meeting Output</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PLT Member Review">4f315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>13315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>1070</x>
+        <y>183</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf96190f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>d3315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>field</value>
+        <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf96190f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>57315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">f855a43e0a0a3c180106a59800a50a22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf96190f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>53315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">f8575c7d0a0a3c1800b8f4d25403c852</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value=" Member Review Physical Meeting Output">13315642db54e2002ab550d9bf96190f</activity>
+        <condition>activity.result == 'plt meeting approved'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>PLT Meeting Approved</name>
+        <order>3</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>1b315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value=" Member Review Physical Meeting Output">13315642db54e2002ab550d9bf96190f</activity>
+        <condition>activity.result == 'plt meeting approved with conditions'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>PLT Meeting Approved with Conditions</name>
+        <order>4</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>5b315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value=" Member Review Physical Meeting Output">13315642db54e2002ab550d9bf96190f</activity>
+        <condition>activity.result == 'plt meeting rejected'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>PLT Meeting Rejected</name>
+        <order>2</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>d7315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value=" Member Review Physical Meeting Output">13315642db54e2002ab550d9bf96190f</activity>
+        <condition>activity.result == 'revise proposal'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Revise Proposal</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>9b315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>47</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Advise PPMO Request Approved</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>07315642db54e2002ab550d9bf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>877</x>
+        <y>482</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>07315642db54e2002ab550d9bf96190c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4f315642db54e2002ab550d9bf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>07315642db54e2002ab550d9bf96190c</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4b315642db54e2002ab550d9bf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>9d5462dedbb7d6002ab550d9bf961937</value>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>07315642db54e2002ab550d9bf96190c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>c7315642db54e2002ab550d9bf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>Request ${number} - ${approval}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>07315642db54e2002ab550d9bf96190c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>47315642db54e2002ab550d9bf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>Request Approved and ready to be progressed, to Complete.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>07315642db54e2002ab550d9bf96190c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cb315642db54e2002ab550d9bf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>07315642db54e2002ab550d9bf96190c</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cf315642db54e2002ab550d9bf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Advise PPMO Request Approved">07315642db54e2002ab550d9bf96190c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>43315642db54e2002ab550d9bf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>37</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Awaiting Physical PLT Meeting</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Awaiting Physical Meeting">8f315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>5b315642db54e2002ab550d9bf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>592</x>
+        <y>87</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf96190e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>9b315642db54e2002ab550d9bf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>u_offline_approval_state=6^approval=plt meeting required^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Awaiting Physical PLT Meeting">5b315642db54e2002ab550d9bf96190e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>1f315642db54e2002ab550d9bf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>0b315642db54e2002ab550d9bf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>14</x>
+        <y>12</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">0b315642db54e2002ab550d9bf96190d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4b315642db54e2002ab550d9bf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>42</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>03315642db54e2002ab550d9bf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>1433</x>
+        <y>22</y>
+    </wf_activity>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>50</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cf315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>1509</x>
+        <y>216</y>
+    </wf_activity>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>9f315642db54e2002ab550d9bf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>955</x>
+        <y>579</y>
+    </wf_activity>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - Group">354e911f0a0a029a00e6a0e6ad74206f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>32</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Finance &amp; PPMO Approval</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Finance &amp; PPMO Review">8b315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5b315642db54e2002ab550d9bf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>280</x>
+        <y>195</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9f315642db54e2002ab550d9bf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">1bd4c8c00a0a0b26635e191420fd194c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>93315642db54e2002ab550d9bf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>any_each</value>
+        <variable display_value="">0698d53c0a0a0b2627f7cf654de211b6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>17315642db54e2002ab550d9bf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a89323c0a80066046c6c1fd0df6475</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>97315642db54e2002ab550d9bf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a29434c0a80066575097078b386f8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>93315642db54e2002ab550d9bf961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ac8459c0a8006628d8903b8b2e579b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1f315642db54e2002ab550d9bf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>f652c48cdb5062002ab550d9bf96194d</value>
+        <variable display_value="">c35dc8950a0a0ba96248a70936f964a8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1f315642db54e2002ab550d9bf961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">4fc0fabe0a6a803f7f0af58179445dbb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>13315642db54e2002ab550d9bf961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8abc43ac0a800664b9b89a9f3f2c7a1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1b315642db54e2002ab550d9bf961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8aaecf5c0a8006617527ddc62f2d668</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9f315642db54e2002ab550d9bf961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a5b2aac0a80066020adf74bd35c283</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9b315642db54e2002ab550d9bf961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a63d44c0a8006617a1a568e6ee0d9e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9b315642db54e2002ab550d9bf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ad144ec0a8006638755cb3662df229</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1f315642db54e2002ab550d9bf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a8a7bc7dc0a800666777a9bd9b84fef8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>97315642db54e2002ab550d9bf961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ae0641c0a800664ae7b95978e88d56</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>17315642db54e2002ab550d9bf961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a8a16056c0a800660449c1bbc94d797f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9b315642db54e2002ab550d9bf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the overall approval status for this approval.&#13;
+//&#13;
+// This script is responsible for setting the approval state for each group that is part of this approval activity before&#13;
+// returning the overall approval state for all of the group(s).&#13;
+//&#13;
+// When called, the following variables are available to the script:&#13;
+//&#13;
+//    Overall for all of the groups that are part of this approval activity:&#13;
+//        counts.total = total number of groups that are part of this approval&#13;
+//        counts.approved = # of groups that approved so far&#13;
+//        counts.rejected = # of groups that rejected so far&#13;
+//        counts.requested = # of groups that are pending approval&#13;
+//        counts.not_requested = # of groups that are not pending approval&#13;
+//        counts.not_required = # of groups that approval is not required&#13;
+//&#13;
+//    And for each group:&#13;
+//        groups[group_id].total = total number of users that are part of this group's approval&#13;
+//        groups[group_id].approved = # of users that approved so far&#13;
+//        groups[group_id].rejected = # of users that rejected so far&#13;
+//        groups[group_id].requested = # of users that are pending approval&#13;
+//        groups[group_id].not_requested = # of users that are not pending approval&#13;
+//        groups[group_id].not_required = # of users that approval is not required&#13;
+//&#13;
+//        groups[group_id].approvalIDs[state] = array of user ids that are at the specified approval state&#13;
+//&#13;
+//        Note: Iterate the groups using:&#13;
+//            for (var id in groups) {&#13;
+//                 var group = groups[id];&#13;
+//                 ...  group.total ...&#13;
+//            }&#13;
+</value>
+        <variable display_value="">069e81530a0a0b264289c1e23fe52558</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>13315642db54e2002ab550d9bf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">069bd78c0a0a0b267fa35f3d77e02a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b315642db54e2002ab550d9bf961912</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1b315642db54e2002ab550d9bf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of group ids or an array of group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       var answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">069c53740a0a0b260e35ee0ead2dbbcc</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Finance &amp; PPMO Approval">5b315642db54e2002ab550d9bf961912</activity>
+        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
+        <condition_default display_value="Approved">586cdc4c0a0a0b5c00888cdfcb07778b</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Approved</name>
+        <order>2</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>df315642db54e2002ab550d9bf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Finance &amp; PPMO Approval">5b315642db54e2002ab550d9bf961912</activity>
+        <condition>activity.result == 'rejected'</condition>
+        <condition_default display_value="Rejected">586d9d960a0a0b5c00509314d15d50d8</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Rejected</name>
+        <order>1</order>
+        <short_description>Approval request was rejected</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9f315642db54e2002ab550d9bf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>23</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Finance &amp; PPMO Rejection</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>1f315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>323</x>
+        <y>95</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1f315642db54e2002ab550d9bf96190f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>5f315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>approval=finance &amp; ppmo rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Finance &amp; PPMO Rejection">1f315642db54e2002ab550d9bf96190f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>df315642db54e2002ab550d9bf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>51</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Member Review Rejected</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PLT Member Review">4f315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>db315642db54e2002ab550d9bf961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>1327</x>
+        <y>212</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>db315642db54e2002ab550d9bf961915</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1f315642db54e2002ab550d9bf961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>approval=plt meeting rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Member Review Rejected">db315642db54e2002ab550d9bf961915</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9f315642db54e2002ab550d9bf961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>41</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PLT Meeting Approved</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cb315642db54e2002ab550d9bf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>1323</x>
+        <y>293</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cb315642db54e2002ab550d9bf96190d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>0f315642db54e2002ab550d9bf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>approval=plt meeting approved^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PLT Meeting Approved">cb315642db54e2002ab550d9bf96190d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>8f315642db54e2002ab550d9bf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>40</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PLT Meeting Approved - with Conditions</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>03315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>1075</x>
+        <y>345</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>03315642db54e2002ab550d9bf96190a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>43315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>approval=plt meeting approved with conditions^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PLT Meeting Approved - with Conditions">03315642db54e2002ab550d9bf96190a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>c3315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>17</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PLT Member Approved</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1b315642db54e2002ab550d9bf961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>517</x>
+        <y>308</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1b315642db54e2002ab550d9bf961918</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5b315642db54e2002ab550d9bf961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>approval=plt member approved^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PLT Member Approved">1b315642db54e2002ab550d9bf961918</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>db315642db54e2002ab550d9bf961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - Group">354e911f0a0a029a00e6a0e6ad74206f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>34</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PLT Member Review</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PLT Member Review">4f315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>53315642db54e2002ab550d9bf961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>515</x>
+        <y>189</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>97315642db54e2002ab550d9bf961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">1bd4c8c00a0a0b26635e191420fd194c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>9b315642db54e2002ab550d9bf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>any_each</value>
+        <variable display_value="">0698d53c0a0a0b2627f7cf654de211b6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>1f315642db54e2002ab550d9bf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a89323c0a80066046c6c1fd0df6475</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>9f315642db54e2002ab550d9bf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a29434c0a80066575097078b386f8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>9b315642db54e2002ab550d9bf961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ac8459c0a8006628d8903b8b2e579b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>17315642db54e2002ab550d9bf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>b4538c8cdb5062002ab550d9bf96199b</value>
+        <variable display_value="">c35dc8950a0a0ba96248a70936f964a8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>17315642db54e2002ab550d9bf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">4fc0fabe0a6a803f7f0af58179445dbb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>13315642db54e2002ab550d9bf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">a8aaecf5c0a8006617527ddc62f2d668</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>1b315642db54e2002ab550d9bf961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">a8abc43ac0a800664b9b89a9f3f2c7a1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>97315642db54e2002ab550d9bf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a5b2aac0a80066020adf74bd35c283</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>93315642db54e2002ab550d9bf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a63d44c0a8006617a1a568e6ee0d9e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>9f315642db54e2002ab550d9bf961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ae0641c0a800664ae7b95978e88d56</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>93315642db54e2002ab550d9bf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ad144ec0a8006638755cb3662df229</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>17315642db54e2002ab550d9bf961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a8a7bc7dc0a800666777a9bd9b84fef8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>1f315642db54e2002ab550d9bf961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a8a16056c0a800660449c1bbc94d797f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>93315642db54e2002ab550d9bf961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the overall approval status for this approval.&#13;
+//&#13;
+// This script is responsible for setting the approval state for each group that is part of this approval activity before&#13;
+// returning the overall approval state for all of the group(s).&#13;
+//&#13;
+// When called, the following variables are available to the script:&#13;
+//&#13;
+//    Overall for all of the groups that are part of this approval activity:&#13;
+//        counts.total = total number of groups that are part of this approval&#13;
+//        counts.approved = # of groups that approved so far&#13;
+//        counts.rejected = # of groups that rejected so far&#13;
+//        counts.requested = # of groups that are pending approval&#13;
+//        counts.not_requested = # of groups that are not pending approval&#13;
+//        counts.not_required = # of groups that approval is not required&#13;
+//&#13;
+//    And for each group:&#13;
+//        groups[group_id].total = total number of users that are part of this group's approval&#13;
+//        groups[group_id].approved = # of users that approved so far&#13;
+//        groups[group_id].rejected = # of users that rejected so far&#13;
+//        groups[group_id].requested = # of users that are pending approval&#13;
+//        groups[group_id].not_requested = # of users that are not pending approval&#13;
+//        groups[group_id].not_required = # of users that approval is not required&#13;
+//&#13;
+//        groups[group_id].approvalIDs[state] = array of user ids that are at the specified approval state&#13;
+//&#13;
+//        Note: Iterate the groups using:&#13;
+//            for (var id in groups) {&#13;
+//                 var group = groups[id];&#13;
+//                 ...  group.total ...&#13;
+//            }&#13;
+</value>
+        <variable display_value="">069e81530a0a0b264289c1e23fe52558</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>1b315642db54e2002ab550d9bf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">069bd78c0a0a0b267fa35f3d77e02a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961910</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>13315642db54e2002ab550d9bf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of group ids or an array of group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       var answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">069c53740a0a0b260e35ee0ead2dbbcc</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PLT Member Review">53315642db54e2002ab550d9bf961910</activity>
+        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
+        <condition_default display_value="Approved">586cdc4c0a0a0b5c00888cdfcb07778b</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Approved</name>
+        <order>2</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d7315642db54e2002ab550d9bf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PLT Member Review">53315642db54e2002ab550d9bf961910</activity>
+        <condition>activity.result == 'rejected'</condition>
+        <condition_default display_value="Rejected">586d9d960a0a0b5c00509314d15d50d8</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Rejected</name>
+        <order>1</order>
+        <short_description>Approval request was rejected</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>97315642db54e2002ab550d9bf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>39</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PLT Member Review Rejection</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Revision Required">0f315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>8b315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>1064</x>
+        <y>81</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8b315642db54e2002ab550d9bf96190a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cb315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>approval=plt meeting rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PLT Member Review Rejection">8b315642db54e2002ab550d9bf96190a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4f315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>15</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PLT member Review Required</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PLT Member Review">4f315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>97315642db54e2002ab550d9bf961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>284</x>
+        <y>448</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>97315642db54e2002ab550d9bf961915</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d7315642db54e2002ab550d9bf961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>u_offline_approval_state=5^approval=requested^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PLT member Review Required">97315642db54e2002ab550d9bf961915</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5b315642db54e2002ab550d9bf961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>20</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PPMO Approval Action</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Finance &amp; PPMO Review">8b315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>47315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>281</x>
+        <y>333</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>47315642db54e2002ab550d9bf96190a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>87315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>approval=finance &amp; ppmo approved^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PPMO Approval Action">47315642db54e2002ab550d9bf96190a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>0b315642db54e2002ab550d9bf96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>30</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PPMO Rejection</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>53315642db54e2002ab550d9bf961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>264</x>
+        <y>0</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>53315642db54e2002ab550d9bf961915</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>93315642db54e2002ab550d9bf961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>approval=ppmo rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PPMO Rejection">53315642db54e2002ab550d9bf961915</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>17315642db54e2002ab550d9bf961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>21</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PPMO Review Approval</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PPMO Review">4b315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cb315642db54e2002ab550d9bf961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>10</x>
+        <y>327</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cb315642db54e2002ab550d9bf961909</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>0f315642db54e2002ab550d9bf961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>approval=ppmo approved^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PPMO Review Approval">cb315642db54e2002ab550d9bf961909</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>8f315642db54e2002ab550d9bf961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PPMO Review Required</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Finance &amp; PPMO Review">8b315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>87315642db54e2002ab550d9bf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>17</x>
+        <y>428</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>87315642db54e2002ab550d9bf96190b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>c7315642db54e2002ab550d9bf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>u_offline_approval_state=2^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PPMO Review Required">87315642db54e2002ab550d9bf96190b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4b315642db54e2002ab550d9bf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PPMO Review Required</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PPMO Review">4b315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>43315642db54e2002ab550d9bf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>15</x>
+        <y>102</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>43315642db54e2002ab550d9bf96190b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>83315642db54e2002ab550d9bf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>u_offline_approval_state=1^approval=requested^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PPMO Review Required">43315642db54e2002ab550d9bf96190b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>07315642db54e2002ab550d9bf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - Group">354e911f0a0a029a00e6a0e6ad74206f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>28</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PPMO Review Required</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PPMO Review">4b315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>13315642db54e2002ab550d9bf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>11</x>
+        <y>201</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>57315642db54e2002ab550d9bf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">1bd4c8c00a0a0b26635e191420fd194c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5b315642db54e2002ab550d9bf961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>any_each</value>
+        <variable display_value="">0698d53c0a0a0b2627f7cf654de211b6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>db315642db54e2002ab550d9bf961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a89323c0a80066046c6c1fd0df6475</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5f315642db54e2002ab550d9bf961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a29434c0a80066575097078b386f8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5b315642db54e2002ab550d9bf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ac8459c0a8006628d8903b8b2e579b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d3315642db54e2002ab550d9bf961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>75e0c84cdb5062002ab550d9bf96198a</value>
+        <variable display_value="">c35dc8950a0a0ba96248a70936f964a8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d3315642db54e2002ab550d9bf961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">4fc0fabe0a6a803f7f0af58179445dbb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d7315642db54e2002ab550d9bf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8abc43ac0a800664b9b89a9f3f2c7a1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>df315642db54e2002ab550d9bf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8aaecf5c0a8006617527ddc62f2d668</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>57315642db54e2002ab550d9bf961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a5b2aac0a80066020adf74bd35c283</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>53315642db54e2002ab550d9bf961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a63d44c0a8006617a1a568e6ee0d9e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d3315642db54e2002ab550d9bf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a8a7bc7dc0a800666777a9bd9b84fef8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5f315642db54e2002ab550d9bf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ae0641c0a800664ae7b95978e88d56</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>53315642db54e2002ab550d9bf961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ad144ec0a8006638755cb3662df229</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>db315642db54e2002ab550d9bf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a8a16056c0a800660449c1bbc94d797f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>53315642db54e2002ab550d9bf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the overall approval status for this approval.&#13;
+//&#13;
+// This script is responsible for setting the approval state for each group that is part of this approval activity before&#13;
+// returning the overall approval state for all of the group(s).&#13;
+//&#13;
+// When called, the following variables are available to the script:&#13;
+//&#13;
+//    Overall for all of the groups that are part of this approval activity:&#13;
+//        counts.total = total number of groups that are part of this approval&#13;
+//        counts.approved = # of groups that approved so far&#13;
+//        counts.rejected = # of groups that rejected so far&#13;
+//        counts.requested = # of groups that are pending approval&#13;
+//        counts.not_requested = # of groups that are not pending approval&#13;
+//        counts.not_required = # of groups that approval is not required&#13;
+//&#13;
+//    And for each group:&#13;
+//        groups[group_id].total = total number of users that are part of this group's approval&#13;
+//        groups[group_id].approved = # of users that approved so far&#13;
+//        groups[group_id].rejected = # of users that rejected so far&#13;
+//        groups[group_id].requested = # of users that are pending approval&#13;
+//        groups[group_id].not_requested = # of users that are not pending approval&#13;
+//        groups[group_id].not_required = # of users that approval is not required&#13;
+//&#13;
+//        groups[group_id].approvalIDs[state] = array of user ids that are at the specified approval state&#13;
+//&#13;
+//        Note: Iterate the groups using:&#13;
+//            for (var id in groups) {&#13;
+//                 var group = groups[id];&#13;
+//                 ...  group.total ...&#13;
+//            }&#13;
+</value>
+        <variable display_value="">069e81530a0a0b264289c1e23fe52558</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d7315642db54e2002ab550d9bf961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">069bd78c0a0a0b267fa35f3d77e02a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>13315642db54e2002ab550d9bf961916</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>df315642db54e2002ab550d9bf961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of group ids or an array of group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       var answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">069c53740a0a0b260e35ee0ead2dbbcc</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PPMO Review Required">13315642db54e2002ab550d9bf961916</activity>
+        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
+        <condition_default display_value="Approved">586cdc4c0a0a0b5c00888cdfcb07778b</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Approved</name>
+        <order>2</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>57315642db54e2002ab550d9bf961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PPMO Review Required">13315642db54e2002ab550d9bf961916</activity>
+        <condition>activity.result == 'rejected'</condition>
+        <condition_default display_value="Rejected">586d9d960a0a0b5c00509314d15d50d8</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Rejected</name>
+        <order>1</order>
+        <short_description>Approval request was rejected</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>97315642db54e2002ab550d9bf961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Reviesion Required</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Revision Required">0f315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>c3315642db54e2002ab550d9bf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>1254</x>
+        <y>21</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c3315642db54e2002ab550d9bf96190d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>07315642db54e2002ab550d9bf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>u_offline_approval_state=0^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Reviesion Required">c3315642db54e2002ab550d9bf96190d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>87315642db54e2002ab550d9bf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Parallel Flow Launcher">35ef56111b211100adca1e094f071315</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>46</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Submission Type Changed to IB</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PPMO Review">4b315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>0b315202db54e2002ab550d9bf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>235</x>
+        <y>913</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4f315202db54e2002ab550d9bf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">713142e11b211100adca1e094f0713f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>43315202db54e2002ab550d9bf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">7608dbca1b121100adca1e094f071355</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cb315202db54e2002ab550d9bf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>d59fdc24dbfb56006d11f1eabf961903</value>
+        <variable display_value="">d698838a1b121100adca1e094f071315</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>c3315202db54e2002ab550d9bf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// This script can be used to provide the workflows(s) to use for each sub-flow execution.  If a single workflow is&#13;
+// to be used for every sub-flow then simply specify that name or ID here.  Otherwise, if separate workflows may&#13;
+// be needed, then perhaps use a WorkflowCoordinator instance, which can be created or referenced here.  &#13;
+//&#13;
+// -- Use one of the methods below --&#13;
+//&#13;
+// METHOD 1:  Provide a name of a workflow&#13;
+//&#13;
+//      'MyWorkflow'&#13;
+//&#13;
+//&#13;
+// METHOD 2:  Provide a sys_id of a workflow via a variable&#13;
+//&#13;
+//       myWorkflow;&#13;
+//&#13;
+//&#13;
+// METHOD 3:  Create a WorkflowCoordinator with parameters for each flow to launch.  &#13;
+//                     The first two sub-flows will be the AllocateServer workflow and the last will be the SetupLoadBalancer workflow&#13;
+//&#13;
+//&#13;
+//        coordinator = new WorkflowCoordinator( {workflow:'AllocateServer'} );&#13;
+//        coordinator.add( {u_serverName:'Tomcat1'} );&#13;
+//        coordinator.add( {u_serverName:'Tomcat2'} );&#13;
+//        coordinator.add( {u_portlist: ['8080','8081,'8082'] },  'SetupLoadBalancer' );&#13;
+//&#13;
+//        coordinator;         // THIS MUST BE THE LAST LINE&#13;
+//&#13;
+//&#13;
+// METHOD 4:  Have a script include return a workflow name or ID or have it return a WorkflowCoordinator instance.&#13;
+//&#13;
+//         var siteType = 'BackupSite';&#13;
+//         var numTomcats = 4;&#13;
+//&#13;
+//         SiteBuilder.build(siteType, numTomcats);     // LAST LINE!  This function returns a pre-configured WorkflowCoordinator&#13;
+//                          &#13;
+&#13;
+</value>
+        <variable display_value="">22dea7431b211100adca1e094f0713f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cf315202db54e2002ab550d9bf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value/>
+        <variable display_value="">428bf90eff1331009267ffffffffff80</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4f315202db54e2002ab550d9bf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>25</value>
+        <variable display_value="">e44186731b211100adca1e094f0713e0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4b315202db54e2002ab550d9bf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>5</value>
+        <variable display_value="">7b81c6731b211100adca1e094f07136e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>47315202db54e2002ab550d9bf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">0a2b9e591b221100adca1e094f07130e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>4b315202db54e2002ab550d9bf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// To access the flow that completed, use the 'flow' variable.&#13;
+//  &#13;
+//     var flowOutput = flow.output;&#13;
+//&#13;
+</value>
+        <variable display_value="">006b9e591b221100adca1e094f0713a1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>c7315202db54e2002ab550d9bf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">662e36101b221100adca1e094f0713a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0b315202db54e2002ab550d9bf96194e</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cb315202db54e2002ab550d9bf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// To access the set of completed workflows use the 'coordinator' variable.&#13;
+//&#13;
+//  var flow1Result = coordinator.getFlow(1).output;&#13;
+//&#13;
+</value>
+        <variable display_value="">e47e76101b221100adca1e094f07134e</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Submission Type Changed to IB">0b315202db54e2002ab550d9bf96194e</activity>
+        <condition>true</condition>
+        <condition_default display_value="Finished">4ae182211b311100adca1e094f07131d</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Finished</name>
+        <order>200</order>
+        <short_description>Completed successfully</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>cf315202db54e2002ab550d9bf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>44</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Type changes</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PPMO Review">4b315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>83315642db54e2002ab550d9bf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>149</x>
+        <y>908</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>83315642db54e2002ab550d9bf96190e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>57315642db54e2002ab550d9bf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>u_typeNOT INPLT,funding plt^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>83315642db54e2002ab550d9bf96190e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>c3315642db54e2002ab550d9bf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Type changes">83315642db54e2002ab550d9bf96190e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>d7315642db54e2002ab550d9bf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>49</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait for Physical Meeting Feedback</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="PLT Member Review">4f315202db54e2002ab550d9bf96194d</stage>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>43315202db54e2002ab550d9bf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+        <x>876</x>
+        <y>136</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>43315202db54e2002ab550d9bf96194e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>07315202db54e2002ab550d9bf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>approval!=ib meeting required^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>43315202db54e2002ab550d9bf96194e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>83315202db54e2002ab550d9bf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait for Physical Meeting Feedback">43315202db54e2002ab550d9bf96194e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>87315202db54e2002ab550d9bf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Rejected">97315642db54e2002ab550d9bf961912</condition>
+        <from display_value="PLT Member Review">53315642db54e2002ab550d9bf961910</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>13315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Awaiting Physical PLT Meeting">5b315642db54e2002ab550d9bf96190e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">83315642db54e2002ab550d9bf96190c</condition>
+        <from display_value="">cb315642db54e2002ab550d9bf96190b</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>13315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Submission Type Changed to IB">0b315202db54e2002ab550d9bf96194e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Revise Proposal">9b315642db54e2002ab550d9bf96190f</condition>
+        <from display_value=" Member Review Physical Meeting Output">13315642db54e2002ab550d9bf96190f</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>17315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PLT Member Review Rejection">8b315642db54e2002ab550d9bf96190a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c3315642db54e2002ab550d9bf96190a</condition>
+        <from display_value="PLT Meeting Approved - with Conditions">03315642db54e2002ab550d9bf96190a</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>17315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Advise PPMO Request Approved">07315642db54e2002ab550d9bf96190c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">87315202db54e2002ab550d9bf96194e</condition>
+        <from display_value="Wait for Physical Meeting Feedback">43315202db54e2002ab550d9bf96194e</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1b315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value=" Member Review Physical Meeting Output">13315642db54e2002ab550d9bf96190f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">87315642db54e2002ab550d9bf96190d</condition>
+        <from display_value="Reviesion Required">c3315642db54e2002ab550d9bf96190d</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1b315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="End">03315642db54e2002ab550d9bf96190e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d7315642db54e2002ab550d9bf96190e</condition>
+        <from display_value="Type changes">83315642db54e2002ab550d9bf96190e</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>1f315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="">cb315642db54e2002ab550d9bf96190b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">4b315642db54e2002ab550d9bf96190b</condition>
+        <from display_value="PPMO Review Required">87315642db54e2002ab550d9bf96190b</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>53315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Finance &amp; PPMO Approval">5b315642db54e2002ab550d9bf961912</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Rejected">97315642db54e2002ab550d9bf961918</condition>
+        <from display_value="PPMO Review Required">13315642db54e2002ab550d9bf961916</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>53315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PPMO Rejection">53315642db54e2002ab550d9bf961915</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="PLT Meeting Approved">1b315642db54e2002ab550d9bf96190f</condition>
+        <from display_value=" Member Review Physical Meeting Output">13315642db54e2002ab550d9bf96190f</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>57315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PLT Meeting Approved">cb315642db54e2002ab550d9bf96190d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">df315642db54e2002ab550d9bf961914</condition>
+        <from display_value="Finance &amp; PPMO Approval">5b315642db54e2002ab550d9bf961912</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>57315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PPMO Approval Action">47315642db54e2002ab550d9bf96190a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">db315642db54e2002ab550d9bf961918</condition>
+        <from display_value="PLT Member Approved">1b315642db54e2002ab550d9bf961918</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5b315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Advise PPMO Request Approved">07315642db54e2002ab550d9bf96190c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">8f315642db54e2002ab550d9bf961909</condition>
+        <from display_value="PPMO Review Approval">cb315642db54e2002ab550d9bf961909</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5b315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PPMO Review Required">87315642db54e2002ab550d9bf96190b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">4b315642db54e2002ab550d9bf96190d</condition>
+        <from display_value="Begin">0b315642db54e2002ab550d9bf96190d</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>5f315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PPMO Review Required">43315642db54e2002ab550d9bf96190b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="PLT Meeting Rejected">d7315642db54e2002ab550d9bf96190f</condition>
+        <from display_value=" Member Review Physical Meeting Output">13315642db54e2002ab550d9bf96190f</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>93315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Member Review Rejected">db315642db54e2002ab550d9bf961915</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">57315642db54e2002ab550d9bf961918</condition>
+        <from display_value="PPMO Review Required">13315642db54e2002ab550d9bf961916</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>93315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PPMO Review Approval">cb315642db54e2002ab550d9bf961909</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">17315642db54e2002ab550d9bf961915</condition>
+        <from display_value="PPMO Rejection">53315642db54e2002ab550d9bf961915</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>97315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Reviesion Required">c3315642db54e2002ab550d9bf96190d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Rejected">9f315642db54e2002ab550d9bf961914</condition>
+        <from display_value="Finance &amp; PPMO Approval">5b315642db54e2002ab550d9bf961912</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>97315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Finance &amp; PPMO Rejection">1f315642db54e2002ab550d9bf96190f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">07315642db54e2002ab550d9bf96190b</condition>
+        <from display_value="PPMO Review Required">43315642db54e2002ab550d9bf96190b</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9b315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PPMO Review Required">13315642db54e2002ab550d9bf961916</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">df315642db54e2002ab550d9bf96190f</condition>
+        <from display_value="Finance &amp; PPMO Rejection">1f315642db54e2002ab550d9bf96190f</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9b315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Reviesion Required">c3315642db54e2002ab550d9bf96190d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5b315642db54e2002ab550d9bf961915</condition>
+        <from display_value="PLT member Review Required">97315642db54e2002ab550d9bf961915</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9f315642db54e2002ab550d9bf961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PLT Member Review">53315642db54e2002ab550d9bf961910</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">8f315642db54e2002ab550d9bf96190d</condition>
+        <from display_value="PLT Meeting Approved">cb315642db54e2002ab550d9bf96190d</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>9f315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Advise PPMO Request Approved">07315642db54e2002ab550d9bf96190c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="PLT Meeting Approved with Conditions">5b315642db54e2002ab550d9bf96190f</condition>
+        <from display_value=" Member Review Physical Meeting Output">13315642db54e2002ab550d9bf96190f</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d3315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PLT Meeting Approved - with Conditions">03315642db54e2002ab550d9bf96190a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">0b315642db54e2002ab550d9bf96190a</condition>
+        <from display_value="PPMO Approval Action">47315642db54e2002ab550d9bf96190a</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d3315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PLT member Review Required">97315642db54e2002ab550d9bf961915</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">4f315642db54e2002ab550d9bf96190a</condition>
+        <from display_value="PLT Member Review Rejection">8b315642db54e2002ab550d9bf96190a</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d7315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Reviesion Required">c3315642db54e2002ab550d9bf96190d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">43315642db54e2002ab550d9bf96190d</condition>
+        <from display_value="Advise PPMO Request Approved">07315642db54e2002ab550d9bf96190c</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>d7315642db54e2002ab550d9bf96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="End">9f315642db54e2002ab550d9bf96190e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">1f315642db54e2002ab550d9bf96190e</condition>
+        <from display_value="Awaiting Physical PLT Meeting">5b315642db54e2002ab550d9bf96190e</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>db315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="Wait for Physical Meeting Feedback">43315202db54e2002ab550d9bf96194e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">d7315642db54e2002ab550d9bf961912</condition>
+        <from display_value="PLT Member Review">53315642db54e2002ab550d9bf961910</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>df315642db54e2002ab550d9bf961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="PLT Member Approved">1b315642db54e2002ab550d9bf961918</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">9f315642db54e2002ab550d9bf961915</condition>
+        <from display_value="Member Review Rejected">db315642db54e2002ab550d9bf961915</from>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:39</sys_created_on>
+        <sys_id>df315642db54e2002ab550d9bf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:39</sys_updated_on>
+        <to display_value="End">cf315642db54e2002ab550d9bf96190a</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-30 11:49:38</sys_created_on>
+        <sys_id>87315202db54e2002ab550d9bf96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-30 11:49:38</sys_updated_on>
+        <workflow_version display_value="Offline Approval - PLT Workflow">47315202db54e2002ab550d9bf96194d</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=df5ff5dedb77d6002ab550d9bf961959^sys_id!=47315202db54e2002ab550d9bf96194d">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

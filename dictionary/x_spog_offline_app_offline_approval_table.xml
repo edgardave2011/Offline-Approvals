@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" audit="true" extends="task" label="Offline Approval Table" max_length="40" name="x_spog_offline_app_offline_approval_table" sizeclass="175" text_index="true" type="collection">
+        <element label="Approval Required By Date" mandatory="true" max_length="40" name="approval_required_by_date" type="glide_date"/>
+        <element attributes="omit_sys_original=true" label="Budget already in Global Portfolio" max_length="15" name="budget_already_in_global_portfolio" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Business Reason" max_length="40" name="business_reason" type="string">
+            <choice/>
+        </element>
+        <element label="Seed Funding Only?" max_length="40" name="u_boolean_20" type="boolean"/>
+        <element active="false" attributes="slushbucket_ref_no_expand=true,no_sort=true" choice="3" label="Business Reason" max_length="1024" name="u_business_reason" type="glide_list">
+            <choice>
+                <element label="Cost Avoidance" sequence="0" value="Cost Avoidance"/>
+                <element label="Legal Compliance" sequence="1" value="Legal Compliance"/>
+                <element label="Risk Mitigation" sequence="2" value="Risk Mitigation"/>
+                <element label="Significant Enabler" sequence="3" value="Significant Enabler"/>
+                <element label="Revenue/Profit" sequence="4" value="Revenue/Profit"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Consequences or Impact of not doing/not implementing" max_length="4000" name="u_consequences" type="string"/>
+        <element label="Project Required By Date" mandatory="true" max_length="40" name="u_due_date_offline" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Expected Benefits (Hard and Soft)" max_length="4000" name="u_expected_benefits" type="string"/>
+        <element attributes="omit_sys_original=true" label="Funding Required" max_length="15" name="u_funding_required" type="currency"/>
+        <element label="Required By Date" mandatory="true" max_length="40" name="u_oa_due_date" type="due_date"/>
+        <element label="Business Funding Available" max_length="40" name="u_oa_funding" type="boolean"/>
+        <element choice="3" label="State" max_length="40" name="u_offline_approval_state" type="integer">
+            <choice>
+                <element label="Draft" sequence="0" value="0"/>
+                <element label="PPMO Review" sequence="1" value="1"/>
+                <element label="Finance &amp; PPMO Review" sequence="2" value="2"/>
+                <element label="CIO Review" sequence="3" value="3"/>
+                <element label="IB Member Review" sequence="4" value="4"/>
+                <element label="PLT Member Review" sequence="5" value="5"/>
+                <element label="Physical Meeting Required" sequence="6" value="6"/>
+                <element label="Closed Complete" sequence="7" value="7"/>
+                <element label="Closed Incomplete" sequence="8" value="8"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Requestor Phone" max_length="100" name="u_phone" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="2016" label="Portfolio Year" mandatory="true" max_length="40" name="u_portfolioyear" type="string">
+            <choice>
+                <element label="N/A" sequence="0" value="N/A"/>
+                <element label="2016" sequence="1" value="2016"/>
+                <element label="2017" sequence="2" value="2017"/>
+                <element label="2018" sequence="3" value="2018"/>
+                <element label="2019" sequence="4" value="2019"/>
+                <element label="2020" sequence="5" value="2020"/>
+                <element label="2021" sequence="6" value="2021"/>
+                <element label="2022" sequence="7" value="2022"/>
+                <element label="2023" sequence="8" value="2023"/>
+                <element label="2024" sequence="9" value="2024"/>
+                <element label="2025" sequence="10" value="2025"/>
+            </choice>
+        </element>
+        <element label="Included in Global Portfolio" max_length="40" name="u_portfolio_included" type="boolean"/>
+        <element label="Portfolio Year" max_length="40" name="u_portfolio_year" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Priority Justification" mandatory="true" max_length="4000" name="u_priority_justification" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Problem / Opportunity" max_length="4000" name="u_problem_opportunity" type="string"/>
+        <element attributes="omit_sys_original=true" label="Overall Project Cost" max_length="15" name="u_project_cost" type="currency"/>
+        <element label="Requestor Department" max_length="32" name="u_refuestor_department" reference="sys_user" type="reference"/>
+        <element label="Requestor" mandatory="true" max_length="32" name="u_requestor" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Requestor Department" max_length="40" name="u_requestor_dept" type="string" use_dependent_field="true"/>
+        <element label="Requestor Email" max_length="32" name="u_requestor_email" reference="sys_user" type="reference"/>
+        <element label="Requestor Phone" max_length="32" name="u_requestor_phone" reference="sys_user" type="reference"/>
+        <element label="Requestor Email" max_length="40" name="u_req_email" type="email"/>
+        <element label="Business Sponsor" mandatory="true" max_length="32" name="u_sponsor" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Strategic Alignment" max_length="4000" name="u_strategic_alignment" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Type of Submission" mandatory="true" max_length="40" name="u_type" type="string">
+            <choice>
+                <element label="IB Funding" sequence="0" value="IB"/>
+                <element label="PLT Funding" sequence="2" value="PLT"/>
+                <element label="Seed Funding" sequence="4" value="Seed"/>
+            </choice>
+        </element>
+        <element label="Workflow Stage" max_length="80" name="workflow_stage" read_only="true" type="workflow"/>
+    </element>
+</database>

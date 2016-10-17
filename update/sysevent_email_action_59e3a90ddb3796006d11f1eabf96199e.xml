@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>false</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <collection>sysapproval_approver</collection>
+        <condition table="sysapproval_approver">sysapproval.numberSTARTSWITHOA^EQ<item endquery="false" field="sysapproval.number" goto="false" newquery="false" operator="STARTSWITH" or="false" value="OA"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>multipart/mixed</content_type>
+        <description/>
+        <event_name>approval.inserted</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>true</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p dir="ltr" style="color: #222222; font-size: 12.8px;">A request for offline approval has been raised in ServiceNow and requires your attention.</p>
+<p dir="ltr" style="color: #222222; font-size: 12.8px;">Please follow the link below to see further details or add comments. Alternatively, use the "Approve" or "Reject" buttons at the end of this email to record your response.&nbsp;</p>
+<p dir="ltr" style="color: #222222; font-size: 12.8px;">ServiceNow request ref:&nbsp;&lt;a href="/nav_to.do?uri=x_spog_offline_app_offline_approval_table.do?sys_id=${request.sys_id}"&gt;${request.number}&lt;/a&gt;<br />Raiser: ${sysapproval.sys_created_by}<br />Sponsor:&nbsp;${sysapproval.u_sponsor}<br />Request title:&nbsp;${sysapproval.short_description}<br />Date response required by:&nbsp;${sysapproval.<span style="color: #343d47; font-size: 13px;">u_due_date_offline}</span><br />Submission type:&nbsp;${sysapproval.<span style="color: #343d47; font-size: 13px;">u_type</span>}<br />Amount requested:&nbsp;<span style="color: #343d47; font-size: 13px;">u_funding_required</span></p>
+<p dir="ltr" style="color: #222222; font-size: 12.8px;">Thank you for your time. Please note: if you do not respond and the required number of approvers is attained or the deadline passes, this will be taken as approval.</p>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Offline Approval</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>approver</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject> ${sysapproval.u_offline_approval_state} Approval Request - ${sysapproval.number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-02 09:36:31</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59e3a90ddb3796006d11f1eabf96199e</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Offline Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+        <sys_update_name>sysevent_email_action_59e3a90ddb3796006d11f1eabf96199e</sys_update_name>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-06-09 15:16:47</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

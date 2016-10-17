@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_requestor</field>
+        <global>true</global>
+        <messages/>
+        <name>Complete Requestor Details </name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+if (isLoading) {
+return false;
+}
+if (!g_form.getControl("u_requestor")) {
+return false;
+}
+var ga = new GlideAjax('David');
+ga.addParam('sysparm_name', 'getReq');
+ga.addParam('sysparm_req', g_form.getValue('u_requestor'));
+ga.getXMLAnswer(callback);
+function callback(rsp){
+var reqOb = rsp.evaluateJSON();
+g_form.setValue("u_requestor_dept", reqOb[0].department);
+g_form.setValue("u_req_email", reqOb[0].email);
+g_form.setValue("u_phone", reqOb[0].phone);
+}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-05-26 14:08:29</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7f202ebedb2316006d11f1eabf9619c7</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Complete Requestor Details </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+        <sys_update_name>sys_script_client_7f202ebedb2316006d11f1eabf9619c7</sys_update_name>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-05-31 10:38:19</sys_updated_on>
+        <table>x_spog_offline_app_offline_approval_table</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

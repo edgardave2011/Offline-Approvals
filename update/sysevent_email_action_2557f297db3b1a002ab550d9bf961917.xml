@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <collection>sysapproval_approver</collection>
+        <condition table="sysapproval_approver">sysapproval.numberSTARTSWITHOA^sysapproval.approval=requested^sysapproval.ref_x_spog_offline_app_offline_approval_table.u_offline_approval_stateNOT IN4,5^EQ<item endquery="false" field="sysapproval.number" goto="false" newquery="false" operator="STARTSWITH" or="false" value="OA"/>
+            <item endquery="false" field="sysapproval.approval" goto="false" newquery="false" operator="=" or="false" value="requested"/>
+            <item endquery="false" field="sysapproval.ref_x_spog_offline_app_offline_approval_table.u_offline_approval_state" goto="false" newquery="false" operator="NOT IN" or="false" value="4,5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <description/>
+        <event_name>approval.inserted</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>true</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p><font size="4" face="verdana,geneva">A request for offline approval has been raised in ServiceNow and requires your attention.</font></p>
+<p><font size="4" face="verdana,geneva">Please follow the link below to see further details or add comments. Alternatively, use the "Approve" or "Reject" buttons at the end of this email to record your response.</font></p>
+<p>&nbsp;</p>
+<p><font size="4" face="verdana,geneva"><span style="font-size: large;">Click here to view ${sysapproval.number}: &nbsp;${sysapproval.URI} </span></font></p>
+<p><font size="4" face="verdana,geneva"><span style="font-size: large;">Attachments&nbsp;(if present on request):</span></font></p>
+<p>${mail_script:add_attachments_offline}</p>
+<table style="height: 279px; border-color: #000000;" border="#000000" width="890" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 260px;"><span style="font-size: large;">&nbsp;Raiser</span><span style="font-size: large;">:</span></td>
+<td>&nbsp;<span style="font-size: large;">${sysapproval.u_requestor}<br /></span></td>
+</tr>
+<tr>
+<td style="width: 260px;"><span style="font-size: large; text-align: start;">&nbsp;Sponsor:</span></td>
+<td><span style="font-size: large;">&nbsp;${sysapproval.u_sponsor}</span></td>
+</tr>
+<tr>
+<td style="width: 260px;"><span style="font-size: large; text-align: start;">&nbsp;Request title:</span></td>
+<td><span style="font-size: large;">&nbsp;${sysapproval.short_description}</span></td>
+</tr>
+<tr>
+<td style="width: 260px;"><span style="font-size: large; text-align: start;">&nbsp;Priority:&nbsp;</span></td>
+<td><span style="font-size: large;">&nbsp;${sysapproval.priority}</span></td>
+</tr>
+<tr>
+<td style="width: 260px;"><span style="font-size: large; text-align: start;">&nbsp;Project&nbsp;required by date:</span></td>
+<td>&nbsp;<span style="font-size: large;">${sysapproval.u_due_date_offline}</span></td>
+</tr>
+<tr>
+<td style="width: 260px;"><span style="font-size: large; text-align: start;"><span style="font-size: large;">&nbsp;Approval&nbsp;</span><span style="font-size: large;">required by date:</span></span></td>
+<td>&nbsp;<span style="font-size: large;">${sysapproval.approval_required_by_date}</span></td>
+</tr>
+<tr>
+<td style="width: 260px;"><span style="font-size: large; text-align: start;">&nbsp;Submission type:</span></td>
+<td>&nbsp;<span style="font-size: large; text-align: start;">${sysapproval.u_type}</span></td>
+</tr>
+<tr>
+<td style="width: 260px;"><span style="font-size: large; text-align: start;">&nbsp;Amount requested:</span></td>
+<td><span style="font-size: large;">&nbsp;${sysapproval.u_funding_required}</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><font size="4" face="verdana,geneva">Thank you for your time. Please note: if you do not respond and the required number of approvers is attained or the deadline passes, this will be taken as approval.</font></p>
+<p><font size="4" face="verdana,geneva">${mailto:mailto.approval}<br /><br />${mailto:mailto.rejection}</font></p>
+<p>&nbsp;<em><strong>*once you have selected the link please click on send to confirm your choice</strong></em></p>
+<p>&nbsp;</p>
+<p style="color: #666666; font-size: 14px; text-align: left; border: 0px;">&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Offline Approval - Approvals (not IB)</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>approver</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject> ${sysapproval.u_offline_approval_state} Approval Request - ${sysapproval.number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-06-09 15:17:30</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2557f297db3b1a002ab550d9bf961917</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>Offline Approval - Approvals (not IB)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+        <sys_update_name>sysevent_email_action_2557f297db3b1a002ab550d9bf961917</sys_update_name>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-07-04 12:22:43</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

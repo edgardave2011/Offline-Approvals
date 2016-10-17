@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_category_user_criteria_mtom">
+    <sc_category_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_category display_value="Offline Approvals">9e501c44db5d62002ab570d9bf9619a3</sc_category>
+        <sys_class_name>sc_category_user_criteria_mtom</sys_class_name>
+        <sys_created_by>david.edgar</sys_created_by>
+        <sys_created_on>2016-08-30 14:55:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5dd44171db6966002ab570d9bf96199a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Offline Approvals.Offline Approvals Catalog</sys_name>
+        <sys_package display_value="Offline Approval" source="x_spog_offline_app">d7d4c676db2316006d11f1eabf9619ba</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Offline Approval">d7d4c676db2316006d11f1eabf9619ba</sys_scope>
+        <sys_update_name>sc_category_user_criteria_mtom_5dd44171db6966002ab570d9bf96199a</sys_update_name>
+        <sys_updated_by>david.edgar</sys_updated_by>
+        <sys_updated_on>2016-08-30 14:55:50</sys_updated_on>
+        <user_criteria display_value="Offline Approvals Catalog">d2810131db6966002ab570d9bf9619f9</user_criteria>
+    </sc_category_user_criteria_mtom>
+</record_update>
